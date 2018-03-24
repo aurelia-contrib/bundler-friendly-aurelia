@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es2015",
+    "module": "esnext",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "sourceRoot": "src",
+    "sourceMap": true,
+    "allowJs": true,
+    "checkJs": true,
+    "baseUrl": "src",
+    "lib": ["es2017", "dom"]
+  },
+  "exclude": ["node_modules", "dist", "static"]
+}

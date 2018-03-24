@@ -1,0 +1,14 @@
+<template>
+  <h2>${heading}</h2>
+  <div class="flex two">
+    <div class="full fourth-900">
+      <span repeat.for="page of router.navigation"
+            class="button pseudo stack ${page.isActive ? 'active':''}">
+        <a href.bind="page.href">${page.title}</a>
+      </span>
+    </div>
+    <div class="full three-fourth-900">
+      <router-view containerless></router-view>
+    </div>
+  </div>
+</template>

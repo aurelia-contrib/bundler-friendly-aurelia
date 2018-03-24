@@ -1,0 +1,19 @@
+<template>
+  <h2>${heading}</h2>
+
+  <div class="flex two three-700 four-1000">
+    <div repeat.for="user of users">
+      <article class="card">
+        <img style="width: 100%"
+             src.bind="user.avatar_url"
+             crossorigin>
+        <footer>
+          <a target="_blank"
+             href.bind="user.html_url">
+            <h3>${user.login}</h3>
+          </a>
+        </footer>
+      </article>
+    </div>
+  </div>
+</template>

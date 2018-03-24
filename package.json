@@ -1,0 +1,45 @@
+{
+  "name": "skeleton-typescript-webpack",
+  "version": "1.0.0",
+  "description": "A starter kit for building a standard navigation-style app with Aurelia and Webpack.",
+  "main": "dist/app.bundle.js",
+  "repository": {
+    "url": "git+ssh://git@github.com/aurelia/skeleton-navigation.git",
+    "type": "git"
+  },
+  "author": "Bazyli Brzóska <bazyli.brzoska@gmail.com> (https://invent.life/)",
+  "license": "CC0-1.0",
+  "engines": {
+    "node": ">= 6.0.0"
+  },
+  "scripts": {
+    "start": "nps",
+    "test": "nps test"
+  },
+  "devDependencies": {
+    "@types/node": "^9.4.7",
+    "@types/webpack": "^4.1.0",
+    "aurelia-webpack-plugin": "^3.0.0-rc.1",
+    "autoprefixer": "7.1.2",
+    "css-loader": "^0.28.10",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "webpack-contrib/html-webpack-plugin",
+    "http-server": "^0.11.1",
+    "nps": "^5.8.2",
+    "nps-utils": "^1.5.0",
+    "postcss-loader": "^2.1.1",
+    "style-loader": "^0.20.3",
+    "ts-loader": "^4.0.1",
+    "ts-node": "^5.0.1",
+    "typescript": "^2.7.2",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "aurelia-bootstrapper": "2.1.1",
+    "aurelia-framework": "1.1.4",
+    "reflect-metadata": "^0.1.12"
+  }
+}

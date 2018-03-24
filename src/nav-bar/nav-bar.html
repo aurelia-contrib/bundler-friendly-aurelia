@@ -1,0 +1,23 @@
+<template>
+  <nav class="demo">
+    <a href="#"
+       class="brand">
+      <span>${router.title}</span>
+    </a>
+
+    <!-- responsive-->
+    <input id="menu"
+           type="checkbox"
+           ref="menu"
+           class="show">
+    <label for="menu"
+           class="burger pseudo button">&#9776;</label>
+
+    <div class="menu"
+         click.delegate="(menu.checked = false) || true">
+      <a repeat.for="page of router.navigation"
+         class="pseudo button"
+         href.bind="page.href">${page.title}</a>
+    </div>
+  </nav>
+</template>
