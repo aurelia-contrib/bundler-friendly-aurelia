@@ -3,10 +3,11 @@ import { WebpackLoader } from 'aurelia-loader-webpack';
 import { Aurelia, PLATFORM } from 'aurelia-framework';
 
 import { bootstrap } from './bootstrapper';
-import { App } from 'app/app';
+import { App } from './app/app';
 
-async function start() {
-  const host = document.getElementById('root');
+(async () => {
+  const host = PLATFORM.global.document.getElementById('root');
+  // there shouldn't be a loader, because aurelia should use standard imports
   const aurelia: Aurelia = await bootstrap(host, new WebpackLoader());
 
   aurelia.use
@@ -16,6 +17,4 @@ async function start() {
 
   await aurelia.start();
   await aurelia.setRoot(PLATFORM.moduleName('app/app'));
-}
-
-start();
+})();

@@ -3,9 +3,10 @@ import { initialize } from 'aurelia-pal-browser';
 import { Loader } from 'aurelia-loader';
 import { Aurelia } from 'aurelia-framework';
 
-const global: Window = PLATFORM.global;
+const global = PLATFORM.global;
 
 function ready() {
+  // it might already be ready
   if (!global.document || global.document.readyState === 'complete') {
     return Promise.resolve();
   }
@@ -16,14 +17,18 @@ function ready() {
       global.removeEventListener('load', done);
       resolve();
     }
+    // either event works, and remove both listeners
     global.document.addEventListener('DOMContentLoaded', done);
     global.addEventListener('load', done);
   });
 }
 
 export async function bootstrap(host: Element, loader: Loader) {
+  // wait for the platform to be ready
   await ready();
+  // initialize PAL
   await initialize();
+  // aurelia should use standard imports instead of being bundler aware
   const aurelia = new Aurelia(loader);
   aurelia.host = host;
   return aurelia;
