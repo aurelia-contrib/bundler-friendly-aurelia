@@ -2,6 +2,12 @@
 
 ## https://discourse.aurelia.io/t/discussion-bundler-friendly-aurelia/959
 
+- [ ] router configuration: pass module directly
+- [ ] router configuration: pass function that return a promise for the module
+- [x] use `@inlineView` and import html files with explicit dependencies
+- [x] manual bootstrapping: set host directly
+- [ ] manual bootstrapping: pass app class instead of string
+
 
 ## Getting started
 
