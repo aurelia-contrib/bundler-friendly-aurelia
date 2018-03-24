@@ -1,11 +1,18 @@
-﻿import { Aurelia, PLATFORM } from "aurelia-framework";
-import { bootstrap } from "./bootstrap";
-import { App } from "app/app";
+﻿import { Aurelia, PLATFORM } from 'aurelia-framework';
+import { bootstrap } from './bootstrap';
+import { App } from 'app/app';
 
-bootstrap(async function configure(aurelia: Aurelia) {
-  aurelia.host = document.getElementById("root");
-  aurelia.use.standardConfiguration().developmentLogging();
+async function start() {
+  const host = document.getElementById('root');
+  const aurelia: Aurelia = await bootstrap(host);
+
+  aurelia.use
+    // add plugins here
+    .standardConfiguration()
+    .developmentLogging();
 
   await aurelia.start();
-  await aurelia.setRoot(PLATFORM.moduleName("app/app"));
-});
+  await aurelia.setRoot(PLATFORM.moduleName('app/app'));
+}
+
+start();

@@ -33,10 +33,10 @@ async function preparePlatform(loader) {
   return new Aurelia(loader);
 }
 
-export async function bootstrap(configure: (aurelia: Aurelia) => void) {
+export async function bootstrap(host: Element) {
   await ready();
   const loader = await new PLATFORM.Loader();
   const aurelia = await preparePlatform(loader);
-  await configure(aurelia);
+  aurelia.host = host;
   return aurelia;
 }
