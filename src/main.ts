@@ -1,4 +1,7 @@
-﻿import { Aurelia, PLATFORM } from 'aurelia-framework';
+﻿import 'reflect-metadata';
+import 'aurelia-loader-webpack';
+import { Aurelia, PLATFORM } from 'aurelia-framework';
+
 import { bootstrap } from './bootstrap';
 import { App } from 'app/app';
 

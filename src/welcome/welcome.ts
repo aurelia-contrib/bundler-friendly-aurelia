@@ -1,12 +1,12 @@
-import { /* computedFrom, */ inlineView } from "aurelia-framework";
+import { /* computedFrom, */ inlineView } from 'aurelia-framework';
 
-import view from "./welcome.html";
+import view from './welcome.html';
 
 @inlineView(view)
 export class Welcome {
-  heading: string = "Welcome to the Aurelia Navigation App";
-  firstName: string = "John";
-  lastName: string = "Doe";
+  heading: string = 'Welcome to the Aurelia Navigation App';
+  firstName: string = 'John';
+  lastName: string = 'Doe';
   previousValue: string = this.fullName;
 
   //Getters can't be directly observed, so they must be dirty checked.
@@ -25,7 +25,7 @@ export class Welcome {
 
   canDeactivate(): boolean | undefined {
     if (this.fullName !== this.previousValue) {
-      return confirm("Are you sure you want to leave?");
+      return confirm('Are you sure you want to leave?');
     }
   }
 }

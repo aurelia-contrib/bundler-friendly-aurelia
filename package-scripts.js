@@ -11,6 +11,7 @@ module.exports = {
       rimraf('dist'),
       crossEnv('NODE_ENV=production webpack --progress -p'),
     ),
+    prettier: 'prettier --write *.[tj]s src/*.[tj]s src/**/*.[tj]s',
     serve: 'http-server dist --cors',
   },
 };
