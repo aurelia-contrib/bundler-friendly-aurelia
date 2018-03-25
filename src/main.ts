@@ -8,7 +8,8 @@ import { App } from './app/app';
 (async () => {
   const host = PLATFORM.global.document.getElementById('root');
   // there shouldn't be a loader, because aurelia should use standard imports
-  const aurelia: Aurelia = await bootstrap(host, new WebpackLoader());
+  const loader = new WebpackLoader();
+  const aurelia: Aurelia = await bootstrap(host, loader);
 
   aurelia.use
     // add plugins here
