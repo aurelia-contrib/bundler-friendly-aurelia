@@ -4,7 +4,9 @@
 
 - [ ] router configuration: pass module directly
 - [ ] router configuration: pass function that return a promise for the module
-- [x] use `@inlineView` and import html files with explicit dependencies
+- [x] components: use `@inlineView` and import html files with explicit dependencies
+- [ ] components: pass local dependencies by class instead of strings
+- [ ] components: pass global dependencies directly (almost there [#858](https://github.com/aurelia/framework/pull/858))
 - [x] manual bootstrapping: set host directly
 - [ ] manual bootstrapping: pass app class instead of string
 
