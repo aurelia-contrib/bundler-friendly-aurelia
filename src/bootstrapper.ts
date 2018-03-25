@@ -1,5 +1,4 @@
 import { PLATFORM } from 'aurelia-pal';
-import { initialize } from 'aurelia-pal-browser';
 import { Loader } from 'aurelia-loader';
 import { Aurelia } from 'aurelia-framework';
 
@@ -23,11 +22,11 @@ function ready() {
   });
 }
 
-export async function bootstrap(host: Element, loader: Loader) {
+export async function bootstrap(host: Element, initialize, loader: Loader) {
   // wait for the platform to be ready
   await ready();
   // initialize PAL
-  await initialize();
+  initialize();
   // aurelia should use standard imports instead of being bundler aware
   const aurelia = new Aurelia(loader);
   aurelia.host = host;
