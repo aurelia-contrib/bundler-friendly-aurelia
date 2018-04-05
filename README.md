@@ -2,13 +2,13 @@
 
 ## https://discourse.aurelia.io/t/discussion-bundler-friendly-aurelia/959
 
-- [ ] router configuration: pass module directly
-- [ ] router configuration: pass function that return a promise for the module
-- [x] components: use `@inlineView` and import html files with explicit dependencies
-- [ ] components: pass local dependencies by class instead of strings
-- [ ] components: pass global dependencies directly (almost there [#858](https://github.com/aurelia/framework/pull/858))
+- [ ] router configuration: pass module directly ([aurelia/templating-router#75](https://github.com/aurelia/templating-router/pull/75))
+- [ ] router configuration: pass function that return a promise for the module ([aurelia/templating-router#75](https://github.com/aurelia/templating-router/pull/75))
+- [x] components: use `@inlineView` and import html files with explicit dependencies ([aurelia/templating#606](https://github.com/aurelia/templating/pull/606))
+- [ ] components: pass local dependencies by class instead of strings ([aurelia/templating#606](https://github.com/aurelia/templating/pull/606))
+- [ ] components: pass global dependencies directly (almost there [aurelia/framework#858](https://github.com/aurelia/framework/pull/858))
 - [x] manual bootstrapping: set host directly
-- [ ] manual bootstrapping: pass app class instead of string
+- [ ] manual bootstrapping: pass app class instead of string ([aurelia/framework#876](https://github.com/aurelia/framework/pull/876))
 
 
 ## Getting started
