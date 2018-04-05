@@ -311,7 +311,7 @@ atob@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.0.3.tgz#19c7a760473774468f20b2d2d03372ad7d4cbf5d"
 
-aurelia-binding@^1.0.0, aurelia-binding@^1.3.0, aurelia-binding@^1.5.0:
+aurelia-binding@^1.0.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aurelia-binding/-/aurelia-binding-1.6.0.tgz#a3db1f43f823a0d392e9d2d7db4442a2d336255d"
   dependencies:
@@ -320,25 +320,6 @@ aurelia-binding@^1.0.0, aurelia-binding@^1.3.0, aurelia-binding@^1.5.0:
     aurelia-pal "^1.0.0"
     aurelia-task-queue "^1.0.0"
 
-aurelia-bootstrapper@2.1.1:
-  version "2.1.1"
-  resolved "https://registry.yarnpkg.com/aurelia-bootstrapper/-/aurelia-bootstrapper-2.1.1.tgz#4757ac17611b6096704961b55148f77b042b6ac5"
-  dependencies:
-    aurelia-event-aggregator "^1.0.0"
-    aurelia-framework "^1.0.0"
-    aurelia-history "^1.0.0"
-    aurelia-history-browser "^1.0.0"
-    aurelia-loader-default "^1.0.0"
-    aurelia-logging-console "^1.0.0"
-    aurelia-pal "^1.3.0"
-    aurelia-pal-browser "^1.0.0"
-    aurelia-polyfills "^1.0.0"
-    aurelia-router "^1.0.1"
-    aurelia-templating "^1.0.0"
-    aurelia-templating-binding "^1.0.0"
-    aurelia-templating-resources "^1.0.0"
-    aurelia-templating-router "^1.0.0"
-
 aurelia-dependency-injection@^1.0.0, aurelia-dependency-injection@^1.2.0:
   version "1.3.2"
   resolved "https://registry.yarnpkg.com/aurelia-dependency-injection/-/aurelia-dependency-injection-1.3.2.tgz#5f9ca5dede6a1ccc72a0838c980df3dfe7918756"
@@ -346,15 +327,9 @@ aurelia-dependency-injection@^1.0.0, aurelia-dependency-injection@^1.2.0:
     aurelia-metadata "^1.0.0"
     aurelia-pal "^1.0.0"
 
-aurelia-event-aggregator@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/aurelia-event-aggregator/-/aurelia-event-aggregator-1.0.1.tgz#9d7c7c1e1efe1ef3a78785e76abe80601e2d34c8"
-  dependencies:
-    aurelia-logging "^1.0.0"
-
-aurelia-framework@1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/aurelia-framework/-/aurelia-framework-1.1.4.tgz#4dc630b1c48203167466e5df2878803ff41dff65"
+aurelia-framework@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/aurelia-framework/-/aurelia-framework-1.2.0.tgz#21da578ce7332022a13741cadb2a84cd258641c7"
   dependencies:
     aurelia-binding "^1.0.0"
     aurelia-dependency-injection "^1.0.0"
@@ -365,31 +340,6 @@ aurelia-framework@1.1.4:
     aurelia-path "^1.0.0"
     aurelia-task-queue "^1.0.0"
     aurelia-templating "^1.0.0"
-
-aurelia-framework@^1.0.0:
-  version "1.1.5"
-  resolved "https://registry.yarnpkg.com/aurelia-framework/-/aurelia-framework-1.1.5.tgz#fd97d281c02d35bb98032830b0731ec3d2a6c1d7"
-  dependencies:
-    aurelia-binding "^1.0.0"
-    aurelia-dependency-injection "^1.0.0"
-    aurelia-loader "^1.0.0"
-    aurelia-logging "^1.0.0"
-    aurelia-metadata "^1.0.0"
-    aurelia-pal "^1.0.0"
-    aurelia-path "^1.0.0"
-    aurelia-task-queue "^1.0.0"
-    aurelia-templating "^1.0.0"
-
-aurelia-history-browser@^1.0.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/aurelia-history-browser/-/aurelia-history-browser-1.1.1.tgz#a7cdfe23ca9f0ce0c86a2e5e83243c993ca94a50"
-  dependencies:
-    aurelia-history "^1.0.0"
-    aurelia-pal "^1.0.0"
-
-aurelia-history@^1.0.0, aurelia-history@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/aurelia-history/-/aurelia-history-1.1.0.tgz#779aa386d56803aaa4bdb7d71435a57768505f57"
 
 aurelia-hot-module-reload@^0.1.0:
   version "0.1.0"
@@ -400,14 +350,6 @@ aurelia-hot-module-reload@^0.1.0:
     aurelia-metadata "^1.0.2"
     aurelia-pal "^1.0.0"
     aurelia-templating "^1.1.2"
-
-aurelia-loader-default@^1.0.0:
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/aurelia-loader-default/-/aurelia-loader-default-1.0.3.tgz#ed9b66041da9b370f6feca26b239b1aa8bb4599d"
-  dependencies:
-    aurelia-loader "^1.0.0"
-    aurelia-metadata "^1.0.0"
-    aurelia-pal "^1.0.0"
 
 aurelia-loader-webpack@^2.1.0:
   version "2.1.0"
@@ -425,12 +367,6 @@ aurelia-loader@^1.0.0:
     aurelia-metadata "^1.0.0"
     aurelia-path "^1.0.0"
 
-aurelia-logging-console@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/aurelia-logging-console/-/aurelia-logging-console-1.0.0.tgz#edf7507a97fc68b40513a17c677d70414101adb4"
-  dependencies:
-    aurelia-logging "^1.0.0"
-
 aurelia-logging@^1.0.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/aurelia-logging/-/aurelia-logging-1.4.0.tgz#04fb7aa74015593f7a15b225beeba07b7d14dcd5"
@@ -441,13 +377,7 @@ aurelia-metadata@^1.0.0, aurelia-metadata@^1.0.2:
   dependencies:
     aurelia-pal "^1.0.0"
 
-aurelia-pal-browser@^1.0.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/aurelia-pal-browser/-/aurelia-pal-browser-1.7.0.tgz#affeb662d074e1244bbc0187201a7d0262a170a4"
-  dependencies:
-    aurelia-pal "^1.4.0"
-
-aurelia-pal@^1.0.0, aurelia-pal@^1.1.1, aurelia-pal@^1.3.0, aurelia-pal@^1.4.0:
+aurelia-pal@^1.0.0, aurelia-pal@^1.1.1:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/aurelia-pal/-/aurelia-pal-1.7.0.tgz#443fd75c72a0b3e1daa3181f655ea770a579dd88"
 
@@ -455,71 +385,13 @@ aurelia-path@^1.0.0:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/aurelia-path/-/aurelia-path-1.1.1.tgz#caa9d20bc8515a5f9f286d9a3b18d81b2c85b0dd"
 
-aurelia-polyfills@^1.0.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/aurelia-polyfills/-/aurelia-polyfills-1.3.0.tgz#899ec0051f76a971c3169341279ed62c7f39f707"
-  dependencies:
-    aurelia-pal "^1.0.0"
-
-aurelia-route-recognizer@^1.0.0:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/aurelia-route-recognizer/-/aurelia-route-recognizer-1.1.1.tgz#3b89c112d8f1af218bc205ab5a6fe0d3913fffb0"
-  dependencies:
-    aurelia-path "^1.0.0"
-
-aurelia-router@^1.0.1, aurelia-router@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/aurelia-router/-/aurelia-router-1.5.0.tgz#beac6b5820ce470c92f0a18450b24ab431b0a60e"
-  dependencies:
-    aurelia-dependency-injection "^1.0.0"
-    aurelia-event-aggregator "^1.0.0"
-    aurelia-history "^1.1.0"
-    aurelia-logging "^1.0.0"
-    aurelia-path "^1.0.0"
-    aurelia-route-recognizer "^1.0.0"
-
 aurelia-task-queue@^1.0.0, aurelia-task-queue@^1.1.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/aurelia-task-queue/-/aurelia-task-queue-1.2.1.tgz#2e25c7cd663b7e3074f1d99744eb2d14ec5ce594"
   dependencies:
     aurelia-pal "^1.0.0"
 
-aurelia-templating-binding@^1.0.0:
-  version "1.4.1"
-  resolved "https://registry.yarnpkg.com/aurelia-templating-binding/-/aurelia-templating-binding-1.4.1.tgz#492565b2a3185478979eec38c5dbf02e00a3dcd7"
-  dependencies:
-    aurelia-binding "^1.3.0"
-    aurelia-logging "^1.0.0"
-    aurelia-templating "^1.3.0"
-
-aurelia-templating-resources@^1.0.0:
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/aurelia-templating-resources/-/aurelia-templating-resources-1.5.4.tgz#c1fb66f4d2fbddeffd8c83cb0115b243c31e3a2f"
-  dependencies:
-    aurelia-binding "^1.5.0"
-    aurelia-dependency-injection "^1.0.0"
-    aurelia-loader "^1.0.0"
-    aurelia-logging "^1.0.0"
-    aurelia-metadata "^1.0.0"
-    aurelia-pal "^1.3.0"
-    aurelia-path "^1.0.0"
-    aurelia-task-queue "^1.0.0"
-    aurelia-templating "^1.5.0"
-
-aurelia-templating-router@^1.0.0:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/aurelia-templating-router/-/aurelia-templating-router-1.3.1.tgz#273edaaabb39f2c022625a0e278f95882f51561f"
-  dependencies:
-    aurelia-binding "^1.3.0"
-    aurelia-dependency-injection "^1.0.0"
-    aurelia-logging "^1.0.0"
-    aurelia-metadata "^1.0.0"
-    aurelia-pal "^1.3.0"
-    aurelia-path "^1.0.0"
-    aurelia-router "^1.5.0"
-    aurelia-templating "^1.5.0"
-
-aurelia-templating@^1.0.0, aurelia-templating@^1.1.2, aurelia-templating@^1.3.0, aurelia-templating@^1.5.0:
+aurelia-templating@^1.0.0, aurelia-templating@^1.1.2:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/aurelia-templating/-/aurelia-templating-1.7.0.tgz#013c08fd1b09a57f5051522e1bb3f657f0803b68"
   dependencies:
@@ -6562,9 +6434,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typescript@^2.7.2:
-  version "2.7.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.7.2.tgz#2d615a1ef4aee4f574425cdff7026edf81919836"
+typescript@^2.8.1:
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.8.1.tgz#6160e4f8f195d5ba81d4876f9c0cc1fbc0820624"
 
 uglify-es@^3.3.4:
   version "3.3.9"
