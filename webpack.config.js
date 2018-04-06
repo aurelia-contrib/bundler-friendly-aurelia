@@ -25,7 +25,7 @@ module.exports = () => {
       extensions: ['.ts', '.js'],
       modules: [src, 'node_modules'],
     },
-    entry: './src/main',
+    entry: './src/client',
     output: {
       path: dist,
       publicPath: '/',

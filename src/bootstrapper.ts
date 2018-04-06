@@ -1,4 +1,5 @@
-import { PLATFORM } from 'aurelia-pal';
+import 'reflect-metadata';
+import { PLATFORM, DOM } from 'aurelia-pal';
 import { Loader } from 'aurelia-loader';
 import { Aurelia } from 'aurelia-framework';
 
@@ -12,12 +13,12 @@ function ready() {
 
   return new Promise(resolve => {
     function done() {
-      global.document.removeEventListener('DOMContentLoaded', done);
+      DOM.removeEventListener('DOMContentLoaded', done, false);
       global.removeEventListener('load', done);
       resolve();
     }
     // either event works, and remove both listeners
-    global.document.addEventListener('DOMContentLoaded', done);
+    DOM.addEventListener('DOMContentLoaded', done, false);
     global.addEventListener('load', done);
   });
 }
