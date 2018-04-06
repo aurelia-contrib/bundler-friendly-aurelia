@@ -1,8 +1,7 @@
 {
   "name": "skeleton-typescript-webpack",
   "version": "1.0.0",
-  "description":
-    "A starter kit for building a standard navigation-style app with Aurelia and Webpack.",
+  "description": "A starter kit for building a standard navigation-style app with Aurelia and Webpack.",
   "main": "dist/app.bundle.js",
   "repository": {
     "url": "git+ssh://git@github.com/aurelia/skeleton-navigation.git",
@@ -20,7 +19,9 @@
   },
   "dependencies": {
     "aurelia-framework": "^1.2.0",
+    "aurelia-loader-nodejs": "^1.0.1",
     "aurelia-pal-browser": "^1.7.0",
+    "aurelia-pal-nodejs": "^1.0.0-beta.3.2.0",
     "aurelia-router": "^1.5.0",
     "express": "^4.16.3",
     "reflect-metadata": "^0.1.12",
